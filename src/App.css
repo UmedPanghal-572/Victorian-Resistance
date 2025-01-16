@@ -1,0 +1,6 @@
+@media (min-width:1920px) {
+    .min-h-screen {
+        min-height: unset !important;
+    }
+
+}
