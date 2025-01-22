@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { FAQ } from '../utils/helper'
 import drop_down from '../assets/images/svg/down-arrow.svg'
+import line from '../assets/images/svg/line.svg'
 
 const CustomFaq = () => {
-    const [activeIndex, setActiveIndex] = useState(0)
+    const [activeIndex, setActiveIndex] = useState(null)
     const handleToggle = (index) => {
         setActiveIndex(activeIndex === index ? "" : index)
     };
@@ -22,7 +23,7 @@ const CustomFaq = () => {
                                 className={`transform transition-transform duration-300 ease-in-out`}
                             >
                                 {activeIndex === index ? (
-                                    '-'
+                                    <img src={line} alt="line" />
                                 ) : (
                                    <img src={drop_down} alt="drop_down" />
                                 )}
@@ -30,7 +31,7 @@ const CustomFaq = () => {
                         </button>
                         <p className={`transition-all  duration-1000 ease-in-out overflow-hidden font-openSans font-normal text-base leading-[136%] text-white max-w-[810px] mb-6 ps-7 ${activeIndex === index
                             ? 'max-h-auto'
-                            : 'max-h-0 opacity-0'}`} > {obj.answer}</p>
+                            : 'max-h-0 '}`} > {obj.answer}</p>
                     </div>
                 ))
                 }

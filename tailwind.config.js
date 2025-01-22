@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'resistance':"url(assets/images/png/bg-layer-resistance.png)",
-        'header': "url(assets/images/png/bg-header.png)",
+        'header': "url(assets/images/gif/victory.gif)",
         'footer': "url(assets/images/png/footer-bg-opacity-2.png)",
       },
       fontFamily: {

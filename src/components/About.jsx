@@ -8,8 +8,8 @@ import google_store from "./../assets/images/svg/google-play.svg"
 const About = () => {
     return (
         <div className='bg-[#070d37]  flex items-center justify-center py-20 md:py-[190px] relative'>
-            <div className='absolute top-[-15%]  sm:top-[-32%] right-0 '><img src={top_layer} alt="layer" /></div>
-            <div className='container max-w-[1140px] mx-auto px-3 z-10'>
+            <div className='absolute top-[-15%]  sm:top-[-32%] right-0 hidden sm:block '><img src={top_layer} alt="layer" /></div>
+            <div className='container max-w-[1140px] mx-auto px-3 sm:z-10'>
                 <div className='flex flex-row flex-wrap px-[-12px] items-center'>
                     <div className='w-full md:w-5/12 px-3 relative'>
                         <div className='relative  flex items-center justify-center w-full '><img src={phone} alt="phone" />
