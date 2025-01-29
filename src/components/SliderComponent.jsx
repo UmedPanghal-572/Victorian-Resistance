@@ -35,7 +35,7 @@ const SliderComponent = () => {
     ],
   };
   return (
-    <div className=' bg-[#070d37] mt-[-2px] pb-[198px]'>
+    <div className=' bg-[#070d37] mt-[-2px] pb-[60px] sm:pb-[100px] md:pb-[198px]'>
       <div className='flex items-center justify-center flex-col px-3'>
         <h2 className='font-normal text-5xl leading-[120%] md:leading-[148%] text-center text-white font-oswald mb-[17px] max-w-[632px]'>Your world is the game board, and your mind is at stake.</h2>
         <p className='font-openSans text-base text-center text-white font-normal max-w-[516px] mb-[51px]'>At the heart of Ingress is a desire to bring people together through exploration and teamwork.</p>

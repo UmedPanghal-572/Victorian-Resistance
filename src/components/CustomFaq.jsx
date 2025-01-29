@@ -14,7 +14,7 @@ const CustomFaq = () => {
         <div className='bg-[#070d37] flex justify-center items-center pb-[60px] md:pb-[120px] lg:pb-[200px] mt-[-2px]'>
             <div className='container max-w-[940px] mx-auto px-3'>
                 <h2 className='font-oswald font-normal text-center text-white text-5xl leading-[148%]'>FAQs</h2>
-                <p className='font-openSans font-normal text-base leading-[136%] text-center max-w-[680px] text-white mx-auto mb-[77px]'>Porta maecenas consequat sed neque gravida eleifend fusce cursus amet. Turpis enim sed pharetra tempus ullamcorper mauris mauris facilisis.</p>
+                <p className='font-openSans font-normal text-base leading-[136%] text-center max-w-[680px] text-white mx-auto mb-11 md:mb-[77px]'>Porta maecenas consequat sed neque gravida eleifend fusce cursus amet. Turpis enim sed pharetra tempus ullamcorper mauris mauris facilisis.</p>
 
                 {FAQ.map((obj, index) => (
                     <div key={index} className='border-b-[2px] border-[#39C6FD] mb-[52px]'>
