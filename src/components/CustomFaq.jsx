@@ -5,7 +5,7 @@ import line from '../assets/images/svg/line.svg'
 import right_triangle from '../assets/images/png/triangle-left.png'
 
 const CustomFaq = () => {
-    const [activeIndex, setActiveIndex] = useState(null)
+    const [activeIndex, setActiveIndex] = useState(0)
     const handleToggle = (index) => {
         setActiveIndex(activeIndex === index ? "" : index)
     };

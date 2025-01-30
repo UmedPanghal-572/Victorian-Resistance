@@ -7,12 +7,14 @@ import left_layer from '../assets/images/png/left-blur-layer.png';
 const Header = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => {
-    setNav(!nav);
+    if (window.innerWidth < 640) {
+      setNav(!nav); 
+    }
   };
 
   useEffect(() => {
     const handleAdd = () => {
-      if (nav && window.innerWidth < 768) {
+      if (nav && window.innerWidth < 640) {
         document.body.classList.add('overflow-hidden');
       } else {
         document.body.classList.remove('overflow-hidden');
@@ -23,7 +25,7 @@ const Header = () => {
 
   return (
     <div className="min-h-screen start1920:h-800 flex justify-center items-center bg-header bg-cover bg-center flex-col relative pt-[10px] ">
-      <div className="absolute bottom-[-2px] left-0 right-0 z-10">
+      <div className="absolute bottom-[-2px] left-0 right-0 z-10 ">
         <img src={bottom_layer} alt="layer" />
       </div>
       <div className="absolute top-0 right-0 hidden sm:block z-10">
