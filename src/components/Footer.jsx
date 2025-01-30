@@ -1,10 +1,12 @@
 import React from 'react'
 import icon from './../assets/images/svg/icon.svg'
+import triangle from "./../assets/images/png/about-top-layer.png"
 
 
 const Footer = () => {
   return (
-    <div className='bg-footer bg-cover bg-center flex items-center justify-center flex-col mt-[-2px] pt-8'>
+    <div className='bg-footer bg-cover bg-center flex items-center justify-center flex-col mt-[-2px] pt-8 relative'>
+      <div ><img className='absolute bottom-0 right-0 hidden sm:block' src={triangle} alt="triangle" /></div>
       <div className='container max-w-[1440px] mx-auto px-3'>
         <div className='flex justify-center mb-6'>
           <img src={icon} alt="icon" />

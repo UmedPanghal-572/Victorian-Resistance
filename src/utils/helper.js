@@ -20,6 +20,7 @@ export const CARDS = [
 
     },
 ]
+
 export const FAQ = [
     {
         question: "Q1.  Aliquam magnis sed arcu rutrum quisque sed aliquet vestibulum?",
